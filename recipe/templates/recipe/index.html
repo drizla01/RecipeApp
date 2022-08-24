@@ -1,0 +1,14 @@
+{% extends 'recipe/base.html'%}
+{% block content %}
+  <body>
+    <h1>Recipe App</h1>
+    <div>
+      <ul>
+        {% for recipe in recipes %}
+        <li>{{ recipe.name}}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </body>
+</html>
+{% endblock content %}
